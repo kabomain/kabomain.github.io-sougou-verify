@@ -12,12 +12,6 @@
     <h1>Discord技術綜合 認証ページ</h1>
     <p>ボタンを押すと認証用コードが表示されます</p>
     <p>表示されたコードをDiscordの/verify_codeコマンドを使って送信してください</p>
-    <textarea id = text></textarea>
-    <script>
-      const view = "const element = document.getElementById('text');
-        element.value = code;"
-      }
-    </script>
-    <input type="button" value="コードを表示" onclick="(view)"/>
+    <input type="button" value="コードを表示" onclick="alert(code)"/>
   </body>
 </html>
