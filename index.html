@@ -7,11 +7,12 @@
       const query = window.location.search;
       const param = query.split("?")[1];
       const code = param.split("=")[1];
+      const alert_message = "以下のコードを/verify_codeコマンドで実行してください"
       }
     </script>
     <h1>Discord技術綜合 認証ページ</h1>
     <p>下のボタンを押してください</p>
-    <input type="button" value="クリック" onclick=alert("以下のコードを/verify_codeコマンドで実行してください"+\n+code);"/>
+    <input type="button" value="クリック" onclick=alert(alert_message + \n + code);>
     <br>
     <br>
     <p>手順1終わりです</p>
