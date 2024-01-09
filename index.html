@@ -12,6 +12,14 @@
     <p>下のボタンを押すと認証用コードが表示されます</p>
     <p>表示されたコードをコピーして、</p>
     <p>Discordで/verify_codeコマンドで送信してください</p>
-    <input type="button" value="クリック" onclick="alert(code)"/>
+    <input type="button" id="copyButton" value="クリック">
+    <script>
+      const copyCode = document.getElementById("code").value;
+      const button = document.getElementById("copyButton");
+
+      button.addEventListener("click", () => {
+        navigator.clipboard.writeText(copyCode);
+      });
+    </script>
   </body>
 </html>
